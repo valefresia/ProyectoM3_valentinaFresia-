@@ -1,0 +1,13 @@
+{
+  "name": "proyecto-m3-valentina-fresia",
+  "version": "1.0.0",
+  "description": "Chat con Lisa Simpson usando Gemini AI - Proyecto Integrador M3 Henry",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
