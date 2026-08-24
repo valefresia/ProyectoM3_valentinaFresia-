@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat con Mickey Mouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__bar">
+      <h1 class="header__title">
+        <span class="header__dot"></span>
+        Chat con Mickey
+      </h1>
+      <nav class="nav">
+        <button class="nav__link" data-view="home">Home</button>
+        <button class="nav__link" data-view="chat">Chat</button>
+        <button class="nav__link" data-view="about">About</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- VISTA: HOME -->
+    <section id="home-view" class="view">
+      <div class="home">
+        <h2 class="home__name">Hola, soy Mickey</h2>
+        <p class="home__description">
+          El ratón más famoso del mundo está para charlar con vos. Preguntame lo que quieras,
+          contame tu día o simplemente vení a pasarla bien un rato.
+        </p>
+        <button class="home__cta" data-view="chat">Empezar a chatear</button>
+      </div>
+    </section>
+
+    <!-- VISTA: CHAT -->
+    <section id="chat-view" class="view">
+      <div class="chat">
+        <div class="chat__messages" id="chat-messages">
+
+          <div class="message message--character">
+            <p class="message__text">¡Hola! Soy Mickey. ¿Qué te trae por acá hoy?</p>
+          </div>
+
+          <div class="message message--user">
+            <p class="message__text">Hola Mickey, ¿qué te gusta hacer?</p>
+          </div>
+
+          <div class="message message--character">
+            <p class="message__text">Me encanta pasar tiempo con mis amigos y siempre estar de buen humor. ¡Ja ja ja!</p>
+          </div>
+
+        </div>
+
+        <div class="chat__typing" id="chat-typing" style="display: none;">
+          <p>Mickey está escribiendo...</p>
+        </div>
+
+        <form class="chat__input-area" id="chat-form">
+          <input
+            type="text"
+            id="chat-input"
+            class="chat__input"
+            placeholder="Escribí tu mensaje..."
+            autocomplete="off"
+          >
+          <button type="submit" class="chat__send">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISTA: ABOUT -->
+    <section id="about-view" class="view">
+      <div class="about">
+        <h2 class="about__title">Sobre el proyecto</h2>
+        <p class="about__text">
+          Esta app es una prueba de concepto desarrollada para ComicSansCon, una agencia digital
+          dedicada a experiencias interactivas para fans. Permite chatear con Mickey Mouse usando
+          inteligencia artificial (Google Gemini).
+        </p>
+        <h2 class="about__title">Sobre Mickey Mouse</h2>
+        <p class="about__text">
+          Mickey es el personaje más emblemático del cine animado: alegre, optimista y siempre
+          dispuesto a ayudar a sus amigos. Nació en 1928 y desde entonces representa la magia
+          y la buena onda para generaciones enteras.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
