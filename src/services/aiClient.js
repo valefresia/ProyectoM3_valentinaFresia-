@@ -5,16 +5,13 @@ import { fetchJson } from "./fetchJson.js";
 const CHAT_ENDPOINT = "/api/chat";
 
 export async function getCharacterReply(uiMessages) {
-  // 1. Recortar historial para controlar tokens.
   const trimmed = getTrimmedHistory(uiMessages);
 
-  // 2. Construir payload con el shape que espera Gemini.
   const payload = buildPayload({
     systemPrompt: MICKEY_SYSTEM_PROMPT,
     uiMessages: trimmed,
   });
 
-  // 3. Llamar a nuestra serverless function (nunca a Gemini directo).
   let rawResponse;
   try {
     rawResponse = await fetchJson(CHAT_ENDPOINT, {
@@ -29,6 +26,5 @@ export async function getCharacterReply(uiMessages) {
     throw err;
   }
 
-  // 4. Normalizar la respuesta a un string limpio.
   return normalizeAIResponse(rawResponse);
 }
