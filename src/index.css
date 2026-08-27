@@ -282,7 +282,6 @@ body {
   cursor: not-allowed;
 }
 
-/* ===== BREAKPOINT 1: TABLET (600px+) ===== */
 @media (min-width: 600px) {
   .header__bar {
     flex-direction: row;
@@ -299,7 +298,6 @@ body {
   }
 }
 
-/* ===== BREAKPOINT 2: DESKTOP (1024px+) ===== */
 @media (min-width: 1024px) {
   .view,
   .chatApp {
