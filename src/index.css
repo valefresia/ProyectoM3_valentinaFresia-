@@ -38,7 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -46,17 +46,19 @@ body {
 .header__brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .header__logo {
-  height: 32px;
+  height: 26px;
   width: auto;
   object-fit: contain;
 }
 
 .mainNav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.35rem;
+  min-width: 0;
 }
 
 .mainNav__link {
@@ -66,8 +68,9 @@ body {
   color: var(--color-ink);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  padding: 0.45rem 1rem;
-  font-size: 0.9rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
@@ -301,6 +304,15 @@ body {
 @media (min-width: 600px) {
   .header__logo {
     height: 38px;
+  }
+
+  .mainNav {
+    gap: 0.5rem;
+  }
+
+  .mainNav__link {
+    padding: 0.45rem 1rem;
+    font-size: 0.9rem;
   }
 
   .message {
