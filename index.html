@@ -7,25 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/index.css" />
-    
+
     <title>Chat con Mickey Mouse</title>
   </head>
   <body>
     <header class="header">
       <div class="header__bar">
-        <h1 class="header__title">
-          <span class="header__dot"></span>
-          Chat con Mickey
-        </h1>
+        <a href="/home" class="header__brand">
+          <img
+            src="/assets/images/mickey-logo.png"
+            alt="Mickey Mouse"
+            class="header__logo"
+          />
+        </a>
         <nav class="mainNav">
           <a class="mainNav__link" href="/home">Home</a>
           <a class="mainNav__link" href="/chat">Chat</a>
-          <a class="mainNav__link" href="/about">About</a>
+          <a class="mainNav__link" href="/about">Sobre mi</a>
         </nav>
       </div>
     </header>
 
     <div id="app"></div>
 
-<script type="module" src="./src/main.js"></script>  </body>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
