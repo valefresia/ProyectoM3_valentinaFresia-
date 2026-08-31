@@ -2,7 +2,7 @@ export function renderHome() {
   const app = document.querySelector("#app");
   app.innerHTML = `
     <section class="view view--home">
-      <div class="home__avatar">🐭</div>
+      <img src="/assets/images/mickey-avatar.png" alt="Mickey Mouse" class="home__avatar" />
       <h2 class="home__name">Hola, soy Mickey</h2>
       <p class="home__description">
         El ratón más famoso del mundo está para charlar con vos. Preguntame lo que quieras,
