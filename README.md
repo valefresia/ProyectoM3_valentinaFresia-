@@ -1,4 +1,4 @@
-# Chat con Mickey Mouse 🐭
+# Chat con Mickey Mouse 
 
 Proyecto Integrador Módulo 3 — Henry Bootcamp
 
@@ -51,7 +51,7 @@ TU_API_KEY_AQUI =
 
 ## Cómo ejecutar los tests
 
-`[PENDIENTE — se agrega cuando estén implementados los tests con Vitest]`
+El proyecto incluye tests unitarios con Vitest sobre las funciones de transformación de datos y manejo de errores. Para correrlos:
 
 ```bash
 npm test
@@ -59,9 +59,15 @@ npm test
 
 ## Cómo desplegar a Vercel
 
-`[PENDIENTE — se completa en el paso de deploy]`
-
-
+1. Conectá el repositorio de GitHub a un nuevo proyecto en [Vercel](https://vercel.com).
+2. En el dashboard del proyecto, configurá la variable de entorno `GEMINI_API_KEY` con tu API key de Gemini (nunca subir la key al repositorio).
+3. Desplegá el proyecto. Vercel detecta automáticamente la carpeta `api/` como Serverless Functions.
+4. Verificá que las tres rutas (`/home`, `/chat`, `/about`) y el chat con Gemini funcionen correctamente en la URL de producción.
 
 ## Link a la aplicación desplegada
 
+https://proyecto-m3-valentina-fresiaa.vercel.app/
+
+## Link a la documentación con IA
+
+https://drive.google.com/drive/folders/1kZESx_qCTHDatftRnkMD8G75gbiRU40A?usp=drive_link
