@@ -10,17 +10,17 @@ Mickey es el personaje más emblemático del cine animado, creado por Walt Disne
 
 ## Stack tecnológico
 
-- **Frontend**: HTML, CSS y JavaScript vanilla (sin frameworks ni build tools)
+- **Frontend**: HTML, CSS y JavaScript vanilla
 - **Routing**: SPA con History API nativa del navegador
 - **Backend/Proxy**: Vercel Serverless Functions
-- **IA**: Google Gemini API (SDK `@google/generative-ai`)
+- **IA**: Google Gemini API 
 - **Testing**: Vitest
 - **Deploy**: Vercel
 
 ## Requisitos previos
 
 - Node.js instalado
-- Una API key de Google Gemini (gratuita, se obtiene en [aistudio.google.com/apikey](https://aistudio.google.com/apikey))
+- Una API key de Google Gemini 
 - Vercel CLI instalado globalmente: `npm install -g vercel`
 
 ## Cómo correr el proyecto en local
